@@ -1,5 +1,5 @@
 # C++ Boilerplate
-[![Build Status](https://travis-ci.org/github/danielmohansahu/mobile-pid-controller.svg?branch=master)](https://travis-ci.org/github/danielmohansahu/mobile-pid-controller)
+[![Build Status](https://travis-ci.org/danielmohansahu/mobile-pid-controller.svg?branch=master)](https://travis-ci.org/github/danielmohansahu/mobile-pid-controller)
 [![Coverage Status](https://coveralls.io/repos/github/danielmohansahu/mobile-pid-controller/badge.svg?branch=master)](https://coveralls.io/github/danielmohansahu/mobile-pid-controller?branch=master)
 ---
 
