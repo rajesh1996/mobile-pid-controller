@@ -56,7 +56,7 @@ cmake -G "Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D CMAKE_ECLI
 Open Eclipse, go to File -> Import -> General -> Existing Projects into Workspace -> 
 Select "boilerplate-eclipse" directory created previously as root directory -> Finish
 
-# Edit
+## Edit
 
 Source files may be edited under the "[Source Directory]" label in the Project Explorer.
 
@@ -124,3 +124,9 @@ perspetive view (or Windows->Perspective->Open Perspective->C/C++).
 - Git
 
     It is possible to manage version control through Eclipse and the git plugin, but it typically requires creating another project. If you're interested in this, try it out yourself and contact me on Canvas.
+
+## Attribution
+
+Daniel Mohan Sahu (driver)
+Spencer Elyard (navigator)
+
