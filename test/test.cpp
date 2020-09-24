@@ -1,3 +1,7 @@
+/* @file test.cpp
+ * @copyright [2020] <Daniel M. Sahu> <Spencer Elyard> 
+ */
+
 #include <gtest/gtest.h>
 #include <controller.h>
 
@@ -5,14 +9,12 @@
 PIDController controller{};
 
 // Check that a newly instantiated class has no state.
-TEST(Initialization, should_pass)
-{
-  EXPECT_EQ(controller.compute(0.0,0.0), 0.0);
+TEST(Initialization, should_pass) {
+  EXPECT_EQ(controller.compute(0.0, 0.0), 0.0);
 }
 
 // Test setters and getters.
-TEST(SetGetParameters, should_pass)
-{
+TEST(SetGetParameters, should_pass) {
   double kp = 0.5;
   double ki = 0.1;
   double kd = 0.2;
@@ -36,20 +38,17 @@ TEST(SetGetParameters, should_pass)
 }
 
 // Test that basic computation works
-TEST(Compute1, should_pass)
-{
+TEST(Compute1, should_pass) {
   EXPECT_DOUBLE_EQ(controller.compute(1.0, 0.0), 20.501);
 }
 
 // Test that basic computation works
-TEST(Compute2, should_pass)
-{
+TEST(Compute2, should_pass) {
   EXPECT_DOUBLE_EQ(controller.compute(1.0, 1.1), -22.0491);
 }
 
 // Test that resetting the controller works
-TEST(ResetCompute, should_pass)
-{
+TEST(ResetCompute, should_pass) {
   controller.reset();
   EXPECT_DOUBLE_EQ(controller.compute(1.0, 0.0), 20.501);
 }

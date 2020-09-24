@@ -1,8 +1,11 @@
 /* @file controller.h
  * @brief A bare-bones PID Controller implementation.
  * 
- * @copyright <Daniel M. Sahu> <Spencer Elyard>
+ * @copyright [2020] <Daniel M. Sahu> <Spencer Elyard> 
  */
+
+#ifndef INCLUDE_CONTROLLER_H_
+#define INCLUDE_CONTROLLER_H_
 
 /* @brief This class is used to calculate a target velocity via PID control.
  * 
@@ -10,9 +13,8 @@
  * controller. No timing is handled internally; calls to 'compute' are
  * expected to come in fixed time steps.
  */
-class PIDController
-{
-  public:
+class PIDController {
+ public:
     PIDController() :
       kp_(0.0),
       ki_(0.0),
@@ -20,8 +22,8 @@ class PIDController
       dt_(0.1),
       previous_error_(0.0),
       integral_(0.0),
-    {};
-    ~PIDController() {};
+    {}
+    ~PIDController() {}
 
     /* @brief Calculate command given setpoint and error.
      * 
@@ -46,7 +48,7 @@ class PIDController
     // @brief Get the timestep we're using.
     void getT(double& dt);
 
-  private:
+ private:
     // @brief Proportional control weight.
     double kp_;
 
@@ -56,7 +58,7 @@ class PIDController
     // @brief Derivative control weight.
     double kd_;
 
-    // @brief Timestep 
+    // @brief Timestep
     double dt_;
 
     // @brief State variable for previously calculated error.
@@ -64,6 +66,6 @@ class PIDController
 
     // @brief State variable for cumulaitve integrated error.
     double integral_;
-
 };
 
+#endif // INCLUDE_CONTROLLER_H_

@@ -1,32 +1,31 @@
+/* @file controller.cpp
+ * 
+ * @copyright [2020] <Daniel M. Sahu> <Spencer Elyard> 
+ */
+
 #include <controller.h>
 
 // stub implementation
-double PIDController::compute(double setpoint, double velocity)
-{
+double PIDController::compute(double setpoint, double velocity) {
     return 0;
 }
 
 // stub implementation
-void PIDController::reset()
-{
+void PIDController::reset() {
 }
 
 // stub implementation
-void PIDController::setK(double kp, double ki, double kd)
-{
+void PIDController::setK(double kp, double ki, double kd) {
 }
 
 // stub implementation
-void PIDController::setT(double dt)
-{
+void PIDController::setT(double dt) {
 }
 
 // stub implementation
-void PIDController::getK(double& kp, double& ki, double& kd)
-{
+void PIDController::getK(double& kp, double& ki, double& kd) {
 }
 
 // stub implementation
-void PIDController::getT(double& dt)
-{
+void PIDController::getT(double& dt) {
 }
