@@ -1,0 +1,10 @@
+@startuml
+
+(*) --> [Given Setpoint, Velocity] Calculate Error
+--> Calculate Integral / Derivative of Error
+--> Calculate Command (Kp * e + Ki * i + Kd * d)
+--> Save Error as Previous Error, Integral
+--> Return Command
+--> (*)
+
+@enduml

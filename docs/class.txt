@@ -1,0 +1,18 @@
+@startuml
+
+class PIDController {
+  - kp_
+  - ki_
+  - kd_
+  - dt_
+  - previous_error_
+  - integral_
+  + double compute(setpoint, velocity)
+  + void reset()
+  + void setK(kp, ki, kd)
+  + void setT(dt)
+  + void getK(kp, ki, kd)
+  + void getT(dt)
+}
+
+@enduml
