@@ -13,7 +13,14 @@
 class PIDController
 {
   public:
-    PIDController() {};
+    PIDController() :
+      kp_(0.0),
+      ki_(0.0),
+      kd_(0.0),
+      dt_(0.1),
+      previous_error_(0.0),
+      integral_(0.0),
+    {};
     ~PIDController() {};
 
     /* @brief Calculate command given setpoint and error.
