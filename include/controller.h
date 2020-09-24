@@ -21,7 +21,7 @@ class PIDController {
       kd_(0.0),
       dt_(0.1),
       previous_error_(0.0),
-      integral_(0.0),
+      integral_(0.0)
     {}
     ~PIDController() {}
 
