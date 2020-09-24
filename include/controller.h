@@ -16,6 +16,5 @@ class PIDController
     // control parameters
     double kp_, ki_, kd_;
 
-}
+};
 
-    
