@@ -1,8 +1,6 @@
-#include <iostream>
-#include <lib.hpp>
+#include <controller.h>
 
 int main()
 {
-    dummy();
     return 0;
 }
