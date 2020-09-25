@@ -7,7 +7,22 @@
 
 // stub implementation
 double PIDController::compute(double setpoint, double velocity) {
-    return 0;
+  double err = setpoint - velocity;
+  double prop_term = kp_ * err;
+
+  integral_ += err * dt_;
+
+  double integ_term = ki_ * integral_;
+
+  double derivative = (err - previous_error_) / dt_;
+  double deriv_term = kd_ * derivative;
+
+  double out = prop_term + integ_term + deriv_term;
+
+  previous_error_ = err;
+
+  return out;
+
 }
 
 // stub implementation
@@ -23,9 +38,9 @@ void PIDController::setT(double dt) {
 }
 
 // stub implementation
-void PIDController::getK(double& kp, double& ki, double& kd) {
+void PIDController::getK(double &kp, double &ki, double &kd) {
 }
 
 // stub implementation
-void PIDController::getT(double& dt) {
+void PIDController::getT(double &dt) {
 }
