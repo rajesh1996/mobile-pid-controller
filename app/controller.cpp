@@ -31,16 +31,26 @@ void PIDController::reset() {
 
 // stub implementation
 void PIDController::setK(double kp, double ki, double kd) {
+  kp_ = kp;
+  ki_ = ki;
+  kd_ = kd;
+
 }
 
 // stub implementation
 void PIDController::setT(double dt) {
+  dt_ = dt;
 }
 
 // stub implementation
 void PIDController::getK(double &kp, double &ki, double &kd) {
+  kp = kp_;
+  ki = ki_;
+  kd = kd_;
+
 }
 
 // stub implementation
 void PIDController::getT(double &dt) {
+  dt = dt_;
 }
