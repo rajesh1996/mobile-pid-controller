@@ -6,7 +6,7 @@
 #include <controller.h>
 
 // instantiate and initialize the class
-PIDController controller{};
+PIDController controller { };
 
 // Check that a newly instantiated class has no state.
 TEST(Initialization, should_pass) {

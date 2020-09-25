@@ -27,12 +27,8 @@ double PIDController::compute(double setpoint, double velocity) {
 
 // stub implementation
 void PIDController::reset() {
-  kp_ = 0.5;
-  ki_ = 0.1;
-  kd_ = 0.2;
-  dt_ = 0.01;
-  integral_= 0.0;
-  previous_error_=0.0;
+  integral_ = 0.0;
+  previous_error_ = 0.0;
 
 }
 
