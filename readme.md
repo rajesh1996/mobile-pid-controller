@@ -1,7 +1,10 @@
-# C++ Boilerplate
+# PID Controller - C++ Project
 [![Build Status](https://travis-ci.org/rajesh1996/mobile-pid-controller.svg?branch=master)](https://travis-ci.org/github/rajesh1996/mobile-pid-controller)
 [![Coverage Status](https://coveralls.io/repos/github/rajesh1996/mobile-pid-controller/badge.svg?branch=master)](https://coveralls.io/github/rajesh1996/mobile-pid-controller?branch=master)
 ---
+## Authors
+- Part 1 : Daniel Sahu (Driver),Spencer Elyard (Navigator)
+- Part 2 : Rajeshwar N S(Driver),Aditya Khopkar (Navigator)
 
 ## Overview
 
@@ -12,7 +15,7 @@ Simple starter C++ project with:
 
 ## Standard install via command-line
 ```
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/rajesh1996/mobile-pid-controller
 cd <path to repository>
 mkdir build
 cd build
@@ -39,16 +42,16 @@ In your Eclipse workspace directory (or create a new one), checkout the repo (an
 ```
 mkdir -p ~/workspace
 cd ~/workspace
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/rajesh1996/mobile-pid-controller
 ```
 
-In your work directory, use cmake to create an Eclipse project for an [out-of-source build] of cpp-boilerplate
+In your work directory, use cmake to create an Eclipse project for an [out-of-source build] of mobile-pid-controller
 
 ```
 cd ~/workspace
 mkdir -p boilerplate-eclipse
 cd boilerplate-eclipse
-cmake -G "Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D CMAKE_ECLIPSE_VERSION=4.7.0 -D CMAKE_CXX_COMPILER_ARG1=-std=c++14 ../cpp-boilerplate/
+cmake -G "Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D CMAKE_ECLIPSE_VERSION=4.7.0 -D CMAKE_CXX_COMPILER_ARG1=-std=c++14 ../mobile-pid-controller/
 ```
 
 ## Import
@@ -125,8 +128,4 @@ perspetive view (or Windows->Perspective->Open Perspective->C/C++).
 
     It is possible to manage version control through Eclipse and the git plugin, but it typically requires creating another project. If you're interested in this, try it out yourself and contact me on Canvas.
 
-## Attribution
-
-Daniel Mohan Sahu (driver)
-Spencer Elyard (navigator)
 
