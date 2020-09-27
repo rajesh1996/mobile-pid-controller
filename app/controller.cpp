@@ -3,6 +3,14 @@
  * @copyright [2020] <Daniel M. Sahu> <Spencer Elyard> 
  */
 
+/**
+ * @fn double compute(double, double)
+ * @brief
+ *
+ * @param setpoint
+ * @param velocity
+ * @return
+ */
 #include <controller.h>
 
 // stub implementation
@@ -46,14 +54,19 @@ void PIDController::setT(double dt) {
 }
 
 // stub implementation
-void PIDController::getK(double &kp, double &ki, double &kd) {
-  kp = kp_;
-  ki = ki_;
-  kd = kd_;
-
+double& PIDController::getKp() {
+  return kp_;
+}
+// stub implementation
+double& PIDController::getKi() {
+  return ki_;
+}
+// stub implementation
+double& PIDController::getKd() {
+  return kd_;
 }
 
 // stub implementation
-void PIDController::getT(double &dt) {
-  dt = dt_;
+double& PIDController::getDt() {
+  return dt_;
 }

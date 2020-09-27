@@ -38,17 +38,42 @@ class PIDController {
    */
   void reset();
 
-  // @brief Set PID parameters (K,I,D)
+  /*  @brief Set PID parameters (K,I,D)   */
   void setK(double kp, double ki, double kd);
 
   // @brief Set the expected timestep
   void setT(double dt);
 
-  // @brief Get the currently set PID parameters (K,I,D);
-  void getK(double &kp, double &ki, double &kd);
+  /**
+   * @fn double getKp&()
+   * @brief Get the currently set kp gain
+   * @param None
+   * @return kp class variable
+   */
+  double& getKp();
 
-  // @brief Get the timestep we're using.
-  void getT(double &dt);
+  /**
+   * @fn double getKi&()
+   * @brief Get the currently set ki gain
+   * @param None
+   * @return ki class variable
+   */
+  double& getKi();
+  /**
+   * @fn double getKd&()
+   * @brief Get the currently set kd gain
+   * @param None
+   * @return kd class variable
+   */
+  double& getKd();
+
+  /**
+   * @fn double getDt&()
+   * @brief Get the timestep being used
+   * @param None
+   * @return dt
+   */
+  double& getDt();
 
  private:
   // @brief Proportional control weight.

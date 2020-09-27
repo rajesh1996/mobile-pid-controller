@@ -26,9 +26,11 @@ TEST(SetGetParameters, should_pass) {
 
   // get parameters back
   double kp_out, ki_out, kd_out;
-  controller.getK(kp_out, ki_out, kd_out);
+  kp_out=controller.getKp();
+  ki_out=controller.getKi();
+  kd_out=controller.getKd();
   double dt_out;
-  controller.getT(dt_out);
+  dt_out=controller.getDt();
 
   // check that input matches output
   EXPECT_DOUBLE_EQ(kp, kp_out);
