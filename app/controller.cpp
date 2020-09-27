@@ -4,7 +4,7 @@
  * @copyright [2020] <Daniel M. Sahu> <Spencer Elyard> 
  */
 
-#include "controller.h"
+#include "include/controller.h"
 
 // stub implementation
 double PIDController::compute(double setpoint, double velocity) {

@@ -5,7 +5,7 @@
  */
 
 #include <iostream>
-#include "controller.h"
+#include "include/controller.h"
 
 int main() {
   PIDController controller;
