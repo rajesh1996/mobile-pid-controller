@@ -1,4 +1,6 @@
 /* @file test.cpp
+ * @ author [Part 1] : Daniel Sahu (Driver), Spencer Elyard (Navigator)
+ * @ author [Part 2] : Rajeshwar N S (Driver), Aditya Khopkar (Navigator)
  * @copyright [2020] <Daniel M. Sahu> <Spencer Elyard> 
  */
 
@@ -26,11 +28,11 @@ TEST(SetGetParameters, should_pass) {
 
   // get parameters back
   double kp_out, ki_out, kd_out;
-  kp_out=controller.getKp();
-  ki_out=controller.getKi();
-  kd_out=controller.getKd();
+  kp_out = controller.getKp();
+  ki_out = controller.getKi();
+  kd_out = controller.getKd();
   double dt_out;
-  dt_out=controller.getDt();
+  dt_out = controller.getDt();
 
   // check that input matches output
   EXPECT_DOUBLE_EQ(kp, kp_out);
